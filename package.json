@@ -1,0 +1,16 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Contains the dependencies ",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Georgina5-2/E-Commerce-Back-End.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
