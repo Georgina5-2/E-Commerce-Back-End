@@ -1,6 +1,6 @@
-import express, { json, urlencoded } from 'express';
-import './routes/index.js';
-import sequelize from './config/connection.js';
+const express = require('express');
+const routes = require('./routes');
+const sequelize = require("./config/connection");
 //const path=require('path');
 const app=express();
 const PORT=process.env.PORT||3001;
