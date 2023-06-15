@@ -51,4 +51,3 @@ Product.init(
 );
 
 module.exports = Product;
-export default Product;

@@ -1,5 +1,5 @@
 const router=require('express').Router();
-import { Category, Product, ProductTag, Tag } from '../../models/index.js';
+const { Category, Product } = require('../../models');
 
 router.get('/',async(req,res)=>{
     try{
@@ -64,4 +64,4 @@ router.delete('/:id',async(req,res)=>{
     }
 });
 
-export default router;
+module.exports = router;
