@@ -1,22 +1,22 @@
-const Category=require('./Category');
-const Product=require('./Product');
-const ProductTag=require('./ProductTag');
-const Tag=require('./Tag');
+import Category, { hasMany } from './Category.js';
+import Product, { belongsTo, belongsToMany } from './Product.js';
+import ProductTag from './ProductTag.js';
+import Tag, { belongsToMany as _belongsToMany } from './Tag.js';
 
 // Products belongsTo Category
-Product.belongsTo(Category, {
+belongsTo(Category, {
     foreignKey: "category_id",
     onDelete: "CASCADE",
   })
   
   // Categories have many Products
-  Category.hasMany(Product, {
+  hasMany(Product, {
     foreignKey: "category_id",
     onDelete: "CASCADE",
   })
   
   // Products belongToMany Tags (through ProductTag)
-  Product.belongsToMany(Tag, {
+  _belongsToMany(Tag, {
     through: {
       model: ProductTag,
       unique: false,
@@ -25,7 +25,7 @@ Product.belongsTo(Category, {
   })
   
   // Tags belongToMany Products (through ProductTag)
-  Tag.belongsToMany(Product, {
+  _belongsToMany(Product, {
     through: {
       model: ProductTag,
       unique: false,
@@ -33,7 +33,7 @@ Product.belongsTo(Category, {
     as: "productIds",
   })
 
-module.exports = {
+export default {
     Product,
     Category,
     Tag,
