@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "test",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed":"node ./seeds/index.js"
   },
   "repository": {
     "type": "git",
