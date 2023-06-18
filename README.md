@@ -32,3 +32,37 @@
 * Server - node.js, express.js
 * Database - MySQL
 * ORM- Sequelizer
+
+
+
+# Link to the file execution video:
+
+
+https://drive.google.com/file/d/1WQN9uuAf05KzGwrY9WQ0_APNeNLYBoIH/view
+
+
+# Screenshots:
+
+
+
+<img width="965" alt="Screenshot1" src="https://github.com/Georgina5-2/E-Commerce-Back-End/assets/122113060/09497ba3-b3a6-4be3-91fa-ee0d9660a64f">
+
+
+
+<img width="965" alt="Screenshot2" src="https://github.com/Georgina5-2/E-Commerce-Back-End/assets/122113060/63044a3d-33c1-4f5d-a52f-db343e2334cb">
+
+
+
+<img width="973" alt="Screenshot3" src="https://github.com/Georgina5-2/E-Commerce-Back-End/assets/122113060/486fac6e-effa-4721-94b1-71bba7c1929e">
+
+
+
+# Acknowledgements : 
+
+* Sequelize - https://sequelize.org/docs/v6/getting-started/
+* MySQL - https://dev.mysql.com/doc/
+
+
+
+
+
